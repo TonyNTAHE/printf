@@ -16,37 +16,32 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			++i;
-			if (format[i] == 'c')
+			if (format[++i] == 'c')
 			{
 				c = (char)va_arg(ap, int);
 				_putchar(c);
 				len++;
 			}
-			else if (format[i] == 's')
+			else if (format[++i] == 's')
 			{
 				s = va_arg(ap, char *);
 				if (s)
 				{
 					while (*s)
-					{
 						_putchar(*s);
-						len++;
-						s++;
-					}
+					len++;
+					s++;
 				}
 			}
-			else if (format[i] == '%')
+			else if (format[++i] == '%')
 			{
 				_putchar('%');
 				len++;
 			}
 		}
 		else
-		{
 			_putchar(format[i]);
-			len++;
-		}
+		len++;
 		i++;
 	}
 	va_end(ap);
