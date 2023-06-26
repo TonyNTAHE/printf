@@ -13,7 +13,6 @@ for (; *format; format++)
 {
 if (*format == '%' && *(format + 1))
 {
-format++;
 if (*format == 'c')
 len += _putchar(va_arg(fmt, int));
 else if (*format == 's')
