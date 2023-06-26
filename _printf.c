@@ -1,49 +1,46 @@
 #include "main.h"
 
 /**
- * _printf - produces output according to a format.
- * @format: format.
- * Return: the number of characters printed.
- */
+* _printf - produces output according to a format.
+* @format: format.
+* Return: the number of characters printed.
+*/
 int _printf(const char *format, ...)
 {
-	va_list ap;
-	int len  = 0, i = 0;
-	char c, *s;
+va_list fmt;
+int len = 0;
+char *s;
 
-	va_start(ap, format);
-	while (format[i])
-	{
-		if (format[i] == '%')
-		{
-			if (format[++i] == 'c')
-			{
-				c = (char)va_arg(ap, int);
-				_putchar(c);
-				len++;
-			}
-			else if (format[++i] == 's')
-			{
-				s = va_arg(ap, char *);
-				if (s)
-				{
-					while (*s)
-						_putchar(*s);
-					len++;
-					s++;
-				}
-			}
-			else if (format[++i] == '%')
-			{
-				_putchar('%');
-				len++;
-			}
-		}
-		else
-			_putchar(format[i]);
-		len++;
-		i++;
-	}
-	va_end(ap);
-	return (len);
+va_start(fmt, format);
+while (*format)
+{
+if (*format == '%' && *(++format))
+{
+switch (*format)
+{
+case 'c':
+len += _putchar(va_arg(fmt, int));
+break;
+case 's':
+s = va_arg(fmt, char *);
+if (s)
+{
+while (*s)
+len += _putchar(*s++);
+}
+break;
+case '%':
+len += _putchar('%');
+break;
+default:
+len += _putchar('%') + _putchar(*format);
+break;
+}
+}
+else
+len += _putchar(*format);
+format++;
+}
+va_end(fmt);
+return (len);
 }
