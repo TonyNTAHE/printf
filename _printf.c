@@ -12,6 +12,8 @@ int len = 0;
 char *s;
 
 va_start(fmt, format);
+if (format)
+{
 while (*format)
 {
 if (*format == '%' && *(++format))
@@ -40,6 +42,7 @@ break;
 else
 len += _putchar(*format);
 format++;
+}
 }
 va_end(fmt);
 return (len);
