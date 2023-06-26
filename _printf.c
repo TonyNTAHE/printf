@@ -30,6 +30,8 @@ if (s)
 while (*s)
 len += _putchar(*s++);
 }
+else
+return (-1);
 break;
 case '%':
 len += _putchar('%');
