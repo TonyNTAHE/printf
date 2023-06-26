@@ -1,10 +1,5 @@
 #include "main.h"
 
-/**
-* _printf - produces output according to a format.
-* @format: format.
-* Return: the number of characters printed.
-*/
 int _printf(const char *format, ...)
 {
 va_list fmt;
@@ -16,13 +11,14 @@ if (format)
 {
 for (; *format; format++)
 {
-if (*format == '%' && *(++format))
+if (*format == '%' && *(format + 1))
 {
+format++;
 if (*format == 'c')
 len += _putchar(va_arg(fmt, int));
 else if (*format == 's')
 {
-s = va_arg(fmt, char *);
+s = va_arg(fmt, char *s);
 if (s)
 {
 while (*s)
