@@ -16,8 +16,6 @@ if (format)
 {
 	for (; *format; format++)
 	{
-		if (*format == NULL)
-			return (-1);
 		if (*format == '%' && *(++format))
 		{
 			if (*format == 'c')
