@@ -30,10 +30,14 @@ if (s)
 while (*s)
 len += _putchar(*s++);
 }
+else
+return (-1);
 break;
 case '%':
 len += _putchar('%');
 break;
+case '\0':
+return (-1);
 default:
 len += _putchar('%') + _putchar(*format);
 break;
