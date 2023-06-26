@@ -44,6 +44,8 @@ len += _putchar(*format);
 format++;
 }
 }
+else
+return (-1);
 va_end(fmt);
 return (len);
 }
