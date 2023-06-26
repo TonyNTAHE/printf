@@ -36,6 +36,11 @@ len += _putchar('%');
 else
 len += _putchar('%') + _putchar(*format);
 }
+else if (*format == '%' && !*(format + 1))
+{
+va_end(fmt);
+return (-1);
+}
 else
 len += _putchar(*format);
 }
