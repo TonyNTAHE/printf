@@ -30,7 +30,7 @@ if (format)
 						len += _putchar(*s++);
 				}
 				else
-					return (-1);
+					return (0);
 			}
 			else if (*format == '%')
 				len += _putchar('%');
@@ -42,7 +42,7 @@ if (format)
 	}
 }
 else
-return (-1);
+return (0);
 va_end(fmt);
 return (len);
 }
