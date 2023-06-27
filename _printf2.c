@@ -1,15 +1,14 @@
 #include "main.h"
 
 /**
- * _printf  - produces output according to a format.
+ * _print_num - produces output according to a format.
  * @format: format.
  * Return: the number pf characters to a format.
  */
-int _printf(const char *format, ...)
+int _print_num(const char *format, ...)
 {
 va_list fmt;
 int i = 0;
-char *s;
 
 va_start(fmt, format);
 if (format)
@@ -18,19 +17,9 @@ if (format)
 	{
 		if (*format == '%' && *(++format))
 		{
-			if (*format == 'c')
-
-				i += _putchar(va_arg(fmt, int));
-			else if (*format == 's')
+			if (*format == 'd' || *format == 'i')
 			{
-				s = va_arg(fmt, char *);
-				if (s)
-				{
-					while (*s)
-						i += _putchar(*s++);
-				}
-				else
-					return (-1);
+				i += _putchar(va_arg(fmt, int));
 			}
 			else if (*format == '%')
 				i += _putchar('%');
