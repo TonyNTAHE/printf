@@ -1,48 +1,47 @@
 #include "main.h"
-
 /**
- * _printf  - produces output according to a format.
- * @format: format.
- * Return: the number pf characters to a format.
+ * _printf - produces output according to a format.
+ * @format: argument.
+ * Return: the number of charater printed.
  */
 int _printf(const char *format, ...)
 {
-va_list fmt;
-int i = 0;
-char *s;
+	if (format == NULL)
+		return (-1);
+	int len = 0, count = 0;
+	va_list fmt;
 
-va_start(fmt, format);
-if (format)
-{
-	for (; *format; format++)
+	va_start(fmt, format);
+	while (*format)
 	{
-		if (*format == '%' && *(++format))
+		if (*format != '%')
 		{
-			if (*format == 'c')
-
-				i += _putchar(va_arg(fmt, int));
-			else if (*format == 's')
-			{
-				s = va_arg(fmt, char *);
-				if (s)
-				{
-					while (*s)
-						i += _putchar(*s++);
-				}
-				else
-					return (-1);
-			}
-			else if (*format == '%')
-				i += _putchar('%');
-			else
-				i += _putchar('%') + _putchar(*format);
+			_putchar(*format);
+			len++;
+		}
+		else if (*(format + 1) == '%')
+		{
+			_putchar('%');
+			len++;
+			format++;
 		}
 		else
-			i += _putchar(*format);
+		{
+			if (*(format + 1) == '\0')
+				return (-1);
+			count = get_spec(*(format + 1), fmt);
+			if (count == -1 || count != 0)
+				format++;
+			if (count > 0)
+				len += count;
+			else
+			{
+				_putchar('%');
+				len++;
+			}
+		}
+		format++;
 	}
-}
-else
-return (-1);
-va_end(fmt);
-return (i);
+	va_end(fmt);
+	return (len);
 }
