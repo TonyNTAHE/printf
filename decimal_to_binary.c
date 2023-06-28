@@ -6,37 +6,35 @@
  */
 int decimal_to_binary(va_list fmt)
 {
-	char *binary, temp;
-	int i, j, k, mid, n, len = 0;
-	int value = va_arg(fmt, int);
+	int *binary;
+	int i = 0, j = 0, k, l = 0;
+	unsigned int value = va_arg(fmt, int), newv;
 
-	binary = malloc(value * sizeof(char *));
-	if (value < 0)
+	if (value == 0)
+	{
+		_putchar(48);
+		l++;
+		return (l);
+	}
+	newv = value;
+	while (newv > 0)
+	{
+		newv /= 2;
+		i++;
+	}
+	binary = malloc(i * sizeof(int));
+	if (binary == NULL)
 		return (-1);
-	while (value != 0)
+	while (j < i)
 	{
-		if (value % 2 == 0)
-		{
-			binary[len] = '0';
-		}
-		else
-			binary[len] = '1';
-		len++;
+		binary[j] = value % 2;
 		value /= 2;
+		j++;
 	}
-	binary[len + 1] = '\0';
-	n = _strlen(binary);
-	mid = n / 2;
-	for (i = 0; i < mid; i++)
+	for (k = j - 1; k >= 0; k--)
 	{
-		temp = binary[i];
-		binary[i] = binary[len - i - 1];
-		binary[len - i - 1] = temp;
+		_putchar(binary[k] + 48);
 	}
-	for (j = 0; j < n; j++)
-	{
-		_putchar(binary[j]);
-		k++;
-	}
-	return (k);
+	free(binary);
+	return (i);
 }
