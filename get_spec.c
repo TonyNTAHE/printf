@@ -12,6 +12,7 @@ int get_spec(char s, va_list fmt)
 		{"s", print_s},
 		{"i", print_i},
 		{"d", print_i},
+		{"b", decimal_to_binary},
 		{NULL, NULL}
 	};
 	int i = 0;

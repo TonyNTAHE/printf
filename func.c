@@ -62,3 +62,19 @@ while (divisor >= 1)
 }
 return (j);
 }
+/**
+ * _strlen - return the length.
+ * @s: character.
+ * Return: len;
+ */
+int _strlen(char *s)
+{
+	int count = 0;
+
+	while (*s)
+	{
+		count++;
+		s++;
+	}
+	return (count);
+}

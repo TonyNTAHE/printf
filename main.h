@@ -4,6 +4,7 @@
 #include <limits.h>
 #include <unistd.h>
 #include <stdint.h>
+#include <stdlib.h>
 int _printf(const char *format, ...);
 int _putchar(char c);
 int _print_num(const char *format, ...);
@@ -12,6 +13,8 @@ int _print_num(const char *format, ...);
 int print_c(va_list fmt);
 int print_s(va_list fmt);
 int print_i(va_list fmt);
+int decimal_to_binary(va_list fmt);
+int _strlen(char *s);
 /**
  * struct chr - struct chr
  * @str: pointer to string.
