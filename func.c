@@ -78,3 +78,23 @@ int _strlen(char *s)
 	}
 	return (count);
 }
+int print_u(va_list fmt)
+{
+	unsigned int divisor = 1, num, i = 0, j = 0;
+	int value = va_arg(fmt, unsigned int);
+
+	while (value / divisor > 9)
+	{
+		i++;
+		divisor *= 10;
+	}
+	while (divisor >= 1)
+	{
+		num = value / divisor;
+		_putchar(48 + num);
+		value %= divisor;
+		divisor /= 10;
+		j++;
+	}
+	return (j);
+}

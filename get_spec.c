@@ -12,7 +12,11 @@ int get_spec(char s, va_list fmt)
 		{"s", print_s},
 		{"i", print_i},
 		{"d", print_i},
+		{"o", decimal_to_oct},
 		{"b", decimal_to_binary},
+		{"x", decimal_to_hexa},
+		{"X", decimal_to_HEXA},
+		{"u", print_u},
 		{NULL, NULL}
 	};
 	int i = 0;
