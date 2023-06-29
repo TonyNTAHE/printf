@@ -7,7 +7,7 @@
  */
 int decimal_to_oct(va_list fmt)
 {
-	unsigned int value = va_arg(fmt, int);
+	unsigned int value = va_arg(fmt, unsigned int);
 	int i = 0, j = 0, newv, rem = 0, len = 0;
 	int  k;
 	int *octal;
