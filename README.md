@@ -16,5 +16,10 @@ The project covers:
 
 4. It handles the u, o, x, X conversion specifiers
 
+5. use a local buffer of 1024 chars in order to call write as 
+    little as possible.
+
+
+
 
 
