@@ -41,4 +41,5 @@ The project covers:
 13. Handle the - flag character for non-custom conversion 
     specifiers.
 
-
+14. Handle the custom conversion specifiers:
+    r: printst the reserved string
