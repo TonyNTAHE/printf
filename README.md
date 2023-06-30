@@ -19,6 +19,11 @@ The project covers:
 5. use a local buffer of 1024 chars in order to call write as 
     little as possible.
 
+6. It handles the custom conversion specifier, S.
+    s: prints the string.
+    
+
+
 
 
 
