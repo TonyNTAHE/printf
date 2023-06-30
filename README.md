@@ -1,9 +1,10 @@
 ##
 printf project done Tony NTAHE, Daniel Omoaregba.
 
-_printf - prints to the output string.
+The function name used was:
+_printf - prints formatted text to the standard output stream.
 
-The project covers:
+The project is to cover the following:
 1. a function that produces output according to a format.
     It returns the number of characters printed(excluding the null byte used to end output to strings).
     The output is written to stdout, the standard output stream.
