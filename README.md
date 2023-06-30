@@ -16,12 +16,18 @@ The project is to covers the following:
 
 1. Tasks 1 focus on handling of some conversion specifiers: d 
     and i.
+    i - is the conversion specifier for int data type
+    d - is also use as the conversion specifier for int data type
 
 2. Task 2 involves handling the custom conversion specifier, b.
     b: unsigned int argument converted to binary.
 
 3. This task involves handling the u, o, x, X conversion
     specifiers.
+    u - is the conversion specifier for unsigned int
+    0 - is the conversion specifier for octal. the decimal value is converted to an octal value
+    x - is the conversion specifier for lowercase Hexadecimal characters. a to e for 10 to 15 respectively
+    X - is the conversion specifier for uppercase Hexadecimal characteres. A to E for 10 to 15 respectively.
 
 4. Task 4 uses a local buffer of 1024 chars in order to call write as little as possible.
 
