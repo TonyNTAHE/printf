@@ -4,11 +4,12 @@ printf project done Tony NTAHE, Daniel Omoaregba.
 The function name used was:
 _printf - prints formatted text to the standard output stream.
 
-The project is to cover the following:
-1. a function that produces output according to a format.
+This project is 
+The project is to covers the following:
+1. Writing a function that produces output according to a format.
     It returns the number of characters printed(excluding the null byte used to end output to strings).
-    The output is written to stdout, the standard output stream.
-    The format is a character string. The format string is composed of zero or more directives. and handles the following conversion specificiers: c, s, %.
+    The output is written to the standard output stream (stdout).
+    The format used is a character string. It handles different conversion specifiers or placeholders. The conversion specifiers used in task 1 are: c, s, %.
 
 2. The functiion handles the d and i conversion specifiers.
 
