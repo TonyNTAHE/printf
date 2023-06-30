@@ -35,4 +35,7 @@ The project covers:
 
 11. Handle the precision for non-custom conversation specifiers.
 
+12. Handle the 0 flag character for non-custom conversion 
+    specifiers.
 
+    
