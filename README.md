@@ -31,6 +31,9 @@ The project covers:
     specifiers: l, h.
     conversion specifiers to handle: d, i, u, o, x, X.
 
+10. Handle the field width for non-custom conversion specifiers.
+
+
     
 
 
