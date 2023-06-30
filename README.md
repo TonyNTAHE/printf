@@ -38,20 +38,18 @@ The project is to covers the following:
     conversion specifiers to handle: d, i, u, o, x, X.
     The non-custom conversion will be combine with the conversion specifiers.
 
-9. Handle the field width for non-custom conversion specifiers.
+9. This task (9) focus on Handling the field width for non-custom conversion specifiers.
 
-11. Handle the precision for non-custom conversation specifiers.
+10. This task (10) focus on Handling the precision for non-custom conversation specifiers.
 
-12. Handle the 0 flag character for non-custom conversion 
-    specifiers.
+11. this task (11) focus on Handling the 0 flag character for non-custom conversion specifiers.
 
-13. Handle the - flag character for non-custom conversion 
-    specifiers.
+12. This task (12) focus on Handling the -flag character for non-custom conversion specifiers.
 
-14. Handle the custom conversion specifiers:
+13. This task (13) focus on Handling the custom conversion specifiers:
     r: printst the reserved string
 
-15. Handle the following custom conversion specifier:
+14. This task (14) focus on Handling the following custom conversion specifier:
     R: prints the rot13'ed string.
 
-16. All of these are working.
+15. All of these are working well.
