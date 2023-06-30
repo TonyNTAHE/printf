@@ -24,7 +24,7 @@ The project covers:
 
 7. It handles the p conversion specifier.
 
-8. It handles the flags characters for non- custom conversion
+// 8. It handles the flags characters for non- custom conversion
     specifiers: +, space and #.
 
 
