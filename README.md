@@ -21,6 +21,10 @@ The project covers:
 
 6. It handles the custom conversion specifier, S.
     s: prints the string.
+
+7. It handles the p conversion specifier.
+
+8. 
     
 
 
