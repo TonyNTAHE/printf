@@ -43,3 +43,6 @@ The project covers:
 
 14. Handle the custom conversion specifiers:
     r: printst the reserved string
+
+15. Handle the following custom conversion specifier:
+    R: prints the rot13'ed string.
