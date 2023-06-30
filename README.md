@@ -36,6 +36,7 @@ The project is to covers the following:
     it also involves Non printable characters printed in a certain way: \x followed by the ASCII code value in hexadecimal.
 
 6. Task 6 involes the p conversion specifier.
+    p - is the conversion specifier for address and pointer.
 
 7. In this Task we are to handles the flags characters for non- custom conversion specifiers: +, space and #.
 
