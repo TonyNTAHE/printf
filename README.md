@@ -46,3 +46,5 @@ The project covers:
 
 15. Handle the following custom conversion specifier:
     R: prints the rot13'ed string.
+
+16. All of these are working.
