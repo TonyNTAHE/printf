@@ -38,4 +38,7 @@ The project covers:
 12. Handle the 0 flag character for non-custom conversion 
     specifiers.
 
-    
+13. Handle the - flag character for non-custom conversion 
+    specifiers.
+
+
