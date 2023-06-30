@@ -14,12 +14,14 @@ The project is to covers the following:
     The output is written to the standard output stream (stdout).
     The format used is a character string. It handles different conversion specifiers or placeholders. The conversion specifiers used in task 1 are: c, s, %.
 
-2. The functiion handles the d and i conversion specifiers.
+2. Tasks 2 deals with handling of some conversion specifiers: d 
+    and i.
 
-3.  It also handle the custom conversion specifiers:
-    b: the unsigned int argument is converted to binary.
+3. Task 3 involves handling the custom conversion specifier, b.
+    b: unsigned int argument converted to binary.
 
-4. It handles the u, o, x, X conversion specifiers
+4. This task involves handling the u, o, x, X conversion
+    specifiers.
 
 5. use a local buffer of 1024 chars in order to call write as 
     little as possible.
