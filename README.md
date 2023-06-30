@@ -24,9 +24,12 @@ The project covers:
 
 7. It handles the p conversion specifier.
 
-// 8. It handles the flags characters for non- custom conversion
+8. It handles the flags characters for non- custom conversion
     specifiers: +, space and #.
 
+9. It handles the length modifiers for non-custom conversion
+    specifiers: l, h.
+    conversion specifiers to handle: d, i, u, o, x, X.
 
     
 
