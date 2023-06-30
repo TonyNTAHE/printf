@@ -33,11 +33,6 @@ The project covers:
 
 10. Handle the field width for non-custom conversion specifiers.
 
-
-    
-
-
-
-
+11. Handle the precision for non-custom conversation specifiers.
 
 
