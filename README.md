@@ -1,10 +1,13 @@
 ##
 printf project done Tony NTAHE, Daniel Omoaregba.
 
+The aim of this project is to be able to create our own printf. This convers the different ways strings are handled and it's display to standard output stream
+
 The function name used was:
 _printf - prints formatted text to the standard output stream.
 
-This project is 
+This project is divided into diffferent tasks. This makes it easy to create the prject. The numbering is base on what was covered in each task.
+
 The project is to covers the following:
 1. Writing a function that produces output according to a format.
     It returns the number of characters printed(excluding the null byte used to end output to strings).
